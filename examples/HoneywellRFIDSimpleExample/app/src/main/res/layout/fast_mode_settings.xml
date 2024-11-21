@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/return_item_title"
+            android:textAppearance="?android:attr/textAppearanceListItem" />
+
+        <com.google.android.material.chip.ChipGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cp_count"
+                style="@style/ChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_count" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cp_rssi"
+                style="@style/ChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_rssi" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cp_ant"
+                style="@style/ChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_ant" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cp_frequency"
+                style="@style/ChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_frequency" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cp_time"
+                style="@style/ChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_time" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cp_rfu"
+                style="@style/ChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_rfu" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cp_pro"
+                style="@style/ChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_pro" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/cp_data"
+                style="@style/ChipStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/chip_data" />
+        </com.google.android.material.chip.ChipGroup>
+    </LinearLayout>
+</LinearLayout>

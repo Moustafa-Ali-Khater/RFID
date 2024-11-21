@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:title="Scenario"
+        app:iconSpaceReserved="false">
+
+        <androidx.preference.ListPreference
+            android:key="@string/settings_key_scenario"
+            android:title="Scenario"
+            android:entries="@array/settings_scenario_mode_entries"
+            android:entryValues="@array/settings_scenario_mode_entryValues"
+            android:summary="NA"
+            app:iconSpaceReserved="false" />
+
+        <EditTextPreference
+            android:key="@string/settings_key_scenario_target_interval"
+            android:title="Target Switch Interval Time"
+            android:defaultValue="3000"
+            android:inputType="number"
+            android:summary="@string/settings_scenario_target_switch_interval_summary"
+            app:iconSpaceReserved="false" />
+
+        <Preference
+            android:key="@string/settings_key_scenario_custom"
+            android:title="Custom Edit"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

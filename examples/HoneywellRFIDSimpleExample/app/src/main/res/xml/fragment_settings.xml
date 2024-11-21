@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.preference.PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <androidx.preference.PreferenceCategory
+        android:title="Common"
+        app:iconSpaceReserved="false">
+        <androidx.preference.ListPreference
+            android:key="@string/settings_key_scan_mode"
+            android:entries="@array/settings_scan_mode_entries"
+            android:entryValues="@array/settings_scan_mode_entryValues"
+            android:title="Scan Mode"
+            app:iconSpaceReserved="false" />
+        <androidx.preference.SwitchPreference
+            android:key="@string/settings_key_rfid_sound"
+            android:title="RFID Inventory Sound"
+            android:summary="Open/Close"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="Antenna Power"
+        app:iconSpaceReserved="false">
+        <androidx.preference.ListPreference
+            android:key="@string/settings_key_read_power"
+            android:title="Read Power"
+            android:entries="@array/antenna_power_list"
+            android:entryValues="@array/antenna_power_list"
+            android:summary="NA"
+            app:iconSpaceReserved="false" />
+        <androidx.preference.ListPreference
+            android:key="@string/settings_key_write_power"
+            android:title="Write Power"
+            android:entries="@array/antenna_power_list"
+            android:entryValues="@array/antenna_power_list"
+            android:summary="NA"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="Region Frequency"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="Region Frequency"
+            android:fragment="com.honeywell.rfidsimpleexample.fragments.settings.SettingsRegionFreqFragment"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="Scenario"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:title="Scenario"
+            android:fragment="com.honeywell.rfidsimpleexample.fragments.settings.SettingsScenarioFragment"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="Addition Data"
+        app:iconSpaceReserved="false">
+        <androidx.preference.ListPreference
+            android:key="@string/settings_key_addition_data"
+            android:title="Addition Data Type"
+            android:entries="@array/settings_addition_data_type"
+            android:entryValues="@array/settings_addition_data_type"
+            android:summary="NA"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="Fast Mode Parameters"
+        app:iconSpaceReserved="false">
+        <androidx.preference.ListPreference
+            android:key="@string/settings_key_pause_percentage"
+            android:title="Pause Percentage"
+            android:entries="@array/settings_pause_percentage_entries"
+            android:entryValues="@array/settings_pause_percentage_entryValues"
+            app:iconSpaceReserved="false" />
+        <com.honeywell.rfidsimpleexample.views.MyPreference
+            android:key="@string/settings_key_fast_mode_params"
+            android:layout="@layout/fast_mode_settings"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+    <androidx.preference.PreferenceCategory
+        android:title="General"
+        app:iconSpaceReserved="false">
+        <Preference
+            android:key="@string/settings_key_temperature"
+            android:title="Temperature of Module"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:key="@string/settings_key_module_version"
+            android:title="Module Version"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:key="@string/settings_key_battery_level"
+            android:title="Battery Level"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:key="@string/settings_key_battery_temperature"
+            android:title="Temperature of Battery"
+            app:iconSpaceReserved="false" />
+        <Preference
+            android:key="@string/settings_key_ble_module_version"
+            android:title="Bluetooth Module Version"
+            app:iconSpaceReserved="false" />
+    </androidx.preference.PreferenceCategory>
+
+</androidx.preference.PreferenceScreen>

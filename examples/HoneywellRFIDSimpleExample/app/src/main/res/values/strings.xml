@@ -1,0 +1,221 @@
+<resources>
+    <string name="app_name">HonRfid se</string>
+    <string name="ok">OK</string>
+    <string name="cancel">Cancel</string>
+    <string name="dialog_enable_location">To use Bluetooth, you need to enable location service first. Please click OK and enable it manually.</string>
+
+    <string name="settings_key_scan_mode">KEY_SCAN_MODE</string>
+    <string name="settings_key_rfid_sound">KEY_RFID_SOUND</string>
+    <string name="settings_key_fast_id">KEY_TAG_FAST_ID</string>
+    <string name="settings_key_tag_focus">KEY_TAG_TAG_FOCUS</string>
+    <string name="settings_key_read_power">KEY_READ_POWER</string>
+    <string name="settings_key_write_power">KEY_WRITE_POWER</string>
+    <string name="settings_key_region">KEY_REGION</string>
+    <string name="settings_key_scenario">KEY_SCENARIO</string>
+    <string name="settings_key_scenario_target_interval">KEY_SCENARIO_TARGET_INTERVAL</string>
+    <string name="settings_key_scenario_custom">KEY_SCENARIO_CUSTOM</string>
+    <string name="settings_key_addition_data">KEY_ADDITION_DATA</string>
+    <string name="settings_key_pause_percentage">KEY_PAUSE_PERCENTAGE</string>
+    <string name="settings_key_fast_mode_params">KEY_FAST_MODE_PARAMS</string>
+    <string name="settings_key_temperature">KEY_MODULE_TEMPERATURE</string>
+    <string name="settings_key_module_version">KEY_VERSION</string>
+    <string name="settings_key_battery_level">KEY_BATTERY_LEVEL</string>
+    <string name="settings_key_battery_temperature">KEY_BATTERY_TEMPERATURE</string>
+    <string name="settings_key_ble_module_version">KEY_BLE_MODULE_VERSION</string>
+
+    <string name="fast_mode_key_count">FAST_MODE_KEY_ITEM_COUNT</string>
+    <string name="fast_mode_key_rssi">FAST_MODE_KEY_ITEM_RSSI</string>
+    <string name="fast_mode_key_ant">FAST_MODE_KEY_ITEM_ANT</string>
+    <string name="fast_mode_key_freq">FAST_MODE_KEY_ITEM_FREQ</string>
+    <string name="fast_mode_key_time">FAST_MODE_KEY_ITEM_TIME</string>
+    <string name="fast_mode_key_rfu">FAST_MODE_KEY_ITEM_RFU</string>
+    <string name="fast_mode_key_pro">FAST_MODE_KEY_ITEM_PRO</string>
+    <string name="fast_mode_key_data">FAST_MODE_KEY_ITEM_DATA</string>
+
+    <string name="return_item_title">Return items</string>
+    <string name="chip_count">count</string>
+    <string name="chip_rssi">rssi</string>
+    <string name="chip_ant">ant</string>
+    <string name="chip_frequency">frequency</string>
+    <string name="chip_time">time</string>
+    <string name="chip_rfu">rfu</string>
+    <string name="chip_pro">pro</string>
+    <string name="chip_data">data</string>
+
+    <string name="settings_version_result">Hardware Version:\n%1$s\nSoftware Version:\n%2$s</string>
+
+    <string name="settings_scenario_invalid_value">Invalid Value!</string>
+    <string name="settings_scenario_target_switch_interval_summary">
+        If no tags find when interval time out then Switch Target A->B or B->A. This take affect when Scan Mode is in Normal Mode
+    </string>
+    <string name="settings_scenario_custom_edit">Custom Mode Edit</string>
+
+    <string-array name="settings_scan_mode_entries">
+        <item>Normal mode</item>
+        <item>Fast mode</item>
+    </string-array>
+
+    <string-array name="settings_scan_mode_entryValues">
+        <item>0</item>
+        <item>1</item>
+    </string-array>
+
+    <string-array name="antenna_power_list">
+        <item>500</item>
+        <item>600</item>
+        <item>700</item>
+        <item>800</item>
+        <item>900</item>
+        <item>1000</item>
+        <item>1100</item>
+        <item>1200</item>
+        <item>1300</item>
+        <item>1400</item>
+        <item>1500</item>
+        <item>1600</item>
+        <item>1700</item>
+        <item>1800</item>
+        <item>1900</item>
+        <item>2000</item>
+        <item>2100</item>
+        <item>2200</item>
+        <item>2300</item>
+        <item>2400</item>
+        <item>2500</item>
+        <item>2600</item>
+        <item>2700</item>
+        <item>2800</item>
+        <item>2900</item>
+        <item>3000</item>
+        <item>3100</item>
+        <item>3200</item>
+        <item>3300</item>
+    </string-array>
+
+    <string-array name="settings_regions">
+        <!-- The sequence should equals to com.honeywell.rfidservice.rfid.RegionV2 -->
+        <item>China Mainland</item>
+        <item>NA</item>
+        <item>Europe</item>
+        <item>Algeria</item>
+        <item>ANZ</item>
+        <item>Bangladesh</item>
+        <item>Brazil</item>
+        <item>Brunei Darussalam</item>
+        <item>Chile</item>
+        <item>HongKong</item>
+        <item>India</item>
+        <item>Indonesia</item>
+        <item>Israel</item>
+        <item>Korea</item>
+        <item>Malaysia</item>
+        <item>Peru</item>
+        <item>Russian</item>
+        <item>Singapore</item>
+        <item>South Africa</item>
+        <item>Taiwan</item>
+        <item>Thailand</item>
+        <item>Venezuela RB</item>
+        <item>Vietnam</item>
+        <item>Morocco</item>
+        <item>Japan</item>
+        <item>Europe Lower</item>
+        <item>Europe Upper</item>
+    </string-array>
+
+    <string-array name="settings_regions_hon">
+        <!-- The sequence should equals to com.honeywell.rfidservice.rfid.RegionV2 -->
+        <item>China Mainland</item>
+        <item>NA</item>
+        <item>Europe</item>
+    </string-array>
+
+    <string-array name="settings_scenario_mode_entries">
+        <item>Anti-Interference </item>
+        <item>Multi-Tags Inventory </item>
+        <item>Mass-Tags Single Inventory </item>
+        <item>Mass-Tags Multi Inventory </item>
+        <item>Single Tag Fast </item>
+        <item>Multi-Tags Fast </item>
+        <item>Custom </item>
+    </string-array>
+
+    <string-array name="settings_scenario_mode_entryValues">
+        <item>1001</item>
+        <item>1002</item>
+        <item>1003</item>
+        <item>1004</item>
+        <item>1005</item>
+        <item>1006</item>
+        <item>1007</item>
+    </string-array>
+
+    <string-array name="settings_addition_data_type">
+        <item>None</item>
+        <item>Reserved Bank</item>
+        <item>Epc Bank</item>
+        <item>Tid Bank</item>
+        <item>User Bank</item>
+    </string-array>
+
+    <string-array name="settings_pause_percentage_entries">
+        <item>0%</item>
+        <item>5%</item>
+        <item>10%</item>
+        <item>15%</item>
+        <item>20%</item>
+        <item>25%</item>
+        <item>30%</item>
+        <item>35%</item>
+        <item>40%</item>
+        <item>45%</item>
+        <item>50%</item>
+    </string-array>
+
+    <string-array name="settings_pause_percentage_entryValues">
+        <item>0</item>
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string-array name="edit_filter_banks">
+        <item>Epc Bank</item>
+        <item>Tid Bank</item>
+        <item>User Bank</item>
+    </string-array>
+
+    <string-array name="edit_rw_banks">
+        <item>Reserved Bank</item>
+        <item>Epc Bank</item>
+        <item>Tid Bank</item>
+        <item>User Bank</item>
+    </string-array>
+
+    <string-array name="edit_lock_area">
+        <item>Access Password</item>
+        <item>Kill Password</item>
+        <item>Epc Bank</item>
+        <item>Tid Bank</item>
+        <item>User Bank</item>
+    </string-array>
+
+    <string-array name="edit_lock_type">
+        <item>Unlock</item>
+        <item>Temporary lock</item>
+        <item>Permanent lock</item>
+    </string-array>
+
+    <string-array name="read_filter_banks">
+        <item>Epc Bank</item>
+        <item>Tid Bank</item>
+        <item>User Bank</item>
+    </string-array>
+</resources>

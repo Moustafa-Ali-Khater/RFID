@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingHorizontal="10dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_session"
+        android:text="Session"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_session"
+        app:layout_constraintTop_toTopOf="@id/tv_session"
+        app:layout_constraintStart_toEndOf="@id/tv_session" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_profile"
+        android:layout_marginLeft="5dip"
+        android:text="Profile"
+        app:layout_constraintTop_toTopOf="@id/tv_session"
+        app:layout_constraintStart_toEndOf="@id/sp_session" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_profile"
+        app:layout_constraintTop_toTopOf="@id/tv_session"
+        app:layout_constraintStart_toEndOf="@id/tv_profile" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_target"
+        android:text="Target"
+        android:layout_marginTop="5dp"
+        app:layout_constraintTop_toBottomOf="@id/tv_session"
+        app:layout_constraintStart_toStartOf="parent" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_target"
+        app:layout_constraintTop_toTopOf="@id/tv_target"
+        app:layout_constraintStart_toEndOf="@id/tv_target" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tv_q"
+        android:layout_marginLeft="5dip"
+        android:text="QValue"
+        app:layout_constraintTop_toTopOf="@id/tv_target"
+        app:layout_constraintStart_toEndOf="@id/sp_target" />
+    <Spinner
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sp_qvalue"
+        app:layout_constraintTop_toTopOf="@id/tv_target"
+        app:layout_constraintStart_toEndOf="@id/tv_q" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
